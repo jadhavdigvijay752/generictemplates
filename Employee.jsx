@@ -214,7 +214,7 @@ function Employee() {
               {inputWarnings.currentWarning.passwordWarning}
             </small>
           )}
-          <p>Flag : {formSubmit}</p>
+
           <div
             style={{
               display: "flex",
@@ -237,7 +237,7 @@ function Employee() {
                       color: "white",
                     }}
                   >
-                    Add Employee {formSubmit} : {typeof formSubmit}
+                    Add Employee
                   </Button>
                 ) : (
                   <Button
@@ -246,8 +246,12 @@ function Employee() {
                     fullWidth
                     disabled
                     type="submit"
+                    style={{
+                      background: "#5e5df0",
+                      color: "white",
+                    }}
                   >
-                    Add Employee {formSubmit} : {typeof formSubmit}
+                    Add Employee
                   </Button>
                 )}
               </>
